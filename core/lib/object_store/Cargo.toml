@@ -14,9 +14,9 @@ zksync_config = { path = "../../lib/config", version = "1.0" }
 zksync_types = { path = "../types", version = "1.0" }
 
 bincode = "1"
-google-cloud-storage = { git = "https://github.com/yoshidan/google-cloud-rust", branch = "main" }
-google-cloud-auth = { git = "https://github.com/yoshidan/google-cloud-rust", branch = "main" }
-google-cloud-default = { git = "https://github.com/yoshidan/google-cloud-rust", branch = "main", features = ["storage", "google-cloud-metadata"] }
+google-cloud-storage = { git = "https://github.com/yoshidan/google-cloud-rust", rev = "c4f47b5df820fbdeabd24db7d6ef85969ef948c6" }
+google-cloud-auth = { git = "https://github.com/yoshidan/google-cloud-rust", rev = "c4f47b5df820fbdeabd24db7d6ef85969ef948c6"}
+google-cloud-default = { git = "https://github.com/yoshidan/google-cloud-rust", rev = "c4f47b5df820fbdeabd24db7d6ef85969ef948c6", features = ["storage", "google-cloud-metadata"]}
 http = "0.2.9"
 metrics = "0.20"
 tokio = { version = "1.21.2", features = ["full"] }
